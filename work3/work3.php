@@ -23,6 +23,10 @@ $inpName="";
 $inpMail="";
 $inpDate="";
 $inpPowers="";
+<<<<<<< HEAD
+=======
+$inpContract="";
+>>>>>>> 4d2d858f57d3f8e779e7f85f91f719c00d479b31
 $inpBio="";
 $errors=FALSE;
 
@@ -76,6 +80,7 @@ else{
   $inpContract=$_POST['contract'];
 }
 
+<<<<<<< HEAD
 
 $manChecked = NULL;
 $nonmanChecked = 'checked="checked"';
@@ -154,6 +159,8 @@ if(isset($super)){
 }
 }
 
+=======
+>>>>>>> 4d2d858f57d3f8e779e7f85f91f719c00d479b31
 // if (empty($_POST['date']) || !is_numeric($_POST['date']) || !preg_match('/^\d+$/', $_POST['date'])) {
 //   print('Заполните год.<br/>');
 //   $errors = TRUE;
@@ -174,6 +181,10 @@ else{
   $inpMail="";
   $inpDate="";
   $inpPowers="";
+<<<<<<< HEAD
+=======
+  $inpContract="";
+>>>>>>> 4d2d858f57d3f8e779e7f85f91f719c00d479b31
   $inpBio="";
   $respt="Форма отправлена!";
 
@@ -194,7 +205,10 @@ else{
   }
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 4d2d858f57d3f8e779e7f85f91f719c00d479b31
 ?>
 
 <!DOCTYPE html>
@@ -223,6 +237,7 @@ else{
          </label><a style="color: red; font-size: 17px;"><?=$erDate?></a></p>
          <p><label>
            Пол:
+<<<<<<< HEAD
            <input type="radio" name="gender" <?php echo $manChecked;?> value="Мужской"> Мужской
           </label>
          <label>
@@ -234,14 +249,33 @@ else{
          <label> <input type="radio" name="limb" <?php echo $l4Checked;?> value="4"> 4 </label>
          <label> <input type="radio" name="limb" <?php echo $l6Checked;?> value="6"> 6 </label>
          <label> <input type="radio" name="limb" <?php echo $l8Checked;?> value="8"> 8 </label>
+=======
+           <input type="radio" name="gender" value="Мужской" checked = "checked"> Мужской
+          </label>
+         <label>
+            <input type="radio" name="gender" value="Женский"> Женский
+          </label></p>
+          Количество конечностей:
+         <br>
+         <label><input type="radio" name="limb" checked="checked" value="2"> 2</label>
+         <label> <input type="radio" name="limb" value="4"> 4 </label>
+         <label> <input type="radio" name="limb" value="6"> 6 </label>
+         <label> <input type="radio" name="limb" value="8"> 8 </label>
+>>>>>>> 4d2d858f57d3f8e779e7f85f91f719c00d479b31
          <br><br>
          <label>
            Сверхспособности:
            <br>
            <select multiple name="Superpowers[]" size="3">
+<<<<<<< HEAD
              <option name="1" <?php echo $p1Selected;?> value="1">Бессмертие</option>
              <option name="2" <?php echo $p2Selected;?> value="2">Прохождение сквозь стены</option>
              <option name="3" <?php echo $p3Selected;?> value="3">Левитация</option>
+=======
+             <option value="1">Бессмертие</option>
+             <option value="2">Прохождение сквозь стены</option>
+             <option value="3">Левитация</option>
+>>>>>>> 4d2d858f57d3f8e779e7f85f91f719c00d479b31
            </select>
          </label>
          <a style="color: red; font-size: 17px;"><?=$erPowers?></a>
@@ -254,7 +288,11 @@ else{
          <a style="color: red; font-size: 17px;"><?=$erBio?></a>
          <p><label>
            С контрактом ознакомлен(-а)
+<<<<<<< HEAD
            <input type="checkbox" name="contract">
+=======
+           <input type="checkbox" name="contract"  checked = "<?=$inpContract?>">
+>>>>>>> 4d2d858f57d3f8e779e7f85f91f719c00d479b31
          </label><a style="color: red; font-size: 17px;"><?=$erContract?></a></p>
          <p><label>
            <input type="submit" value="Отправить">
