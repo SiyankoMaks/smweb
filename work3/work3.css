@@ -1,0 +1,13 @@
+@media(min-width:800px){
+body{
+    margin: 0;
+   background-color: azure;
+}
+form{
+    padding: 2%;
+    text-align: left;
+    margin-left: 40%;
+    margin-right: 40%;
+    background-color: rgb(186, 219, 208);
+}
+}
