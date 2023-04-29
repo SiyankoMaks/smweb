@@ -52,7 +52,7 @@ else {
 ?>
 
 <body>
-    <form id="form" method="POST", action="index.php">
+    <form id="form" method="POST", action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
     <a style="color: red; text-align: center; font-size: 23px;"><?php echo $resp ?></a>
     <a style="color: rgb(52, 134, 71); text-align: center; font-size: 22px;"><?php echo $respt ?></a>
     <?php
