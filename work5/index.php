@@ -47,7 +47,7 @@ if($_SERVER["REQUEST_METHOD"] == "GET"){
     setcookie("bio", $res[0]["bio"]);
 
 
-    $sth1 = $conn->prepare("SELECT ability_id FROM Connection where id=:id");
+    $sth1 = $db->prepare("SELECT ability_id FROM Connection where id=:id");
     $sth1->execute(['id'=>"$id"]);
     $res_power = $sth1->fetchAll();
 
