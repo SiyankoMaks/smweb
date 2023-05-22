@@ -56,7 +56,7 @@ else{
   $token = $_POST['token'];
   $time = $_POST["timetok"];
   $user = 'u52882'; $pass = '8244733';
-  $db = new PDO('mysql:host=localhost;dbname=u52879', $user, $pass, [PDO::ATTR_PERSISTENT => true]);
+  $db = new PDO('mysql:host=localhost;dbname=u52882', $user, $pass, [PDO::ATTR_PERSISTENT => true]);
   $statement = $db->prepare("SELECT * FROM Tokens where token=:token");
   $statement->execute(['token'=>"$token"]);
   $rt = $statement->fetchAll();
